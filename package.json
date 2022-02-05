@@ -11,10 +11,13 @@
     "url": "git+https://github.com/rafaelalma/vetter-server.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "rafaelalma",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rafaelalma/vetter-server/issues"
   },
-  "homepage": "https://github.com/rafaelalma/vetter-server#readme"
+  "homepage": "https://github.com/rafaelalma/vetter-server#readme",
+  "dependencies": {
+    "express": "4.17.2"
+  }
 }
