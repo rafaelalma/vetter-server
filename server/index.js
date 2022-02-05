@@ -9,6 +9,14 @@ const pets = require('./routes/pets')
 
 app.use(express.json())
 
+app.use(function logger (req, res, next) {
+  console.log(`Request IP: ${req.ip}`)
+  console.log(`Request Method: ${req.method}`)
+  console.log(`Request date: ${new Date()}`)
+
+  next()
+})
+
 app.get('/', (req, res) => {
   res.send('<h1>Vetter</h1>')
 })
