@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
       message: 'Name is required'
     })
   } else {
-    res.json({
+    res.status(201).json({
       ok: true,
       pet: body
     })
@@ -31,7 +31,7 @@ router.put('/:id', (req, res) => {
 })
 
 router.delete('/:id', (req, res) => {
-  res.send('DELETE request')
+  res.status(204).send('DELETE request')
 })
 
 module.exports = router
